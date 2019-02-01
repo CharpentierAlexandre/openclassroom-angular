@@ -3,16 +3,6 @@
         <div class="h1">{{ title }}</div>
     </div>
     <div class="row">
-        <!--   <div class="col-xs-12">
-               <h2>Mes appareils -- M‡J : {{ lastUpdate | async | date: 'd MMM y' | uppercase }}</h2>
-               <ul class="list-group">
-                   <app-device *ngFor="let device of devices" [deviceName]="device.name" [deviceStatus]="device.status"></app-device>
-               </ul>
-               <button class="btn btn-sm btn-success"
-                       [disabled]="!isAuth"
-                       (click)="onSwitchOn()">Tout allumer</button>
-           </div> -->
-
         <app-post-list [postList]="pl"></app-post-list>
     </div>
 </div>
